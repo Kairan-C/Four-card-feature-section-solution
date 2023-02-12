@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Dark_Blue: hsl(234, 12%, 34%);
+  --Grayish_Blue: hsl(229, 6%, 66%);
+  --Light_Gray: hsl(0, 0%, 98%);
+
+  /* font */
+
+  --ff_Poppins: "Poppins", sans-serif;
+
+  --fw_200: 200;
+  --fw_400: 400;
+  --fw_600: 600;
+
+  --fs_15: 0.9375rem;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  font-family: var(--ff_Poppins);
+  font-size: var(--fs_15);
+  color: var(--Dark_Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light_Gray);
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowwrap;
+  flex-grow: 1;
+}
+
+.main_header {
+  font-weight: var(--fw_600);
+  letter-spacing: 0.00375rem;
+  font-size: 2.1875rem;
+  margin: 5rem 0 1.125rem 0;
+  padding: 0 15px;
+  color: var(--Dark_Blue);
+}
+.header_1 {
+  font-weight: var(--fw_200);
+}
+
+.header_2 {
+  font-weight: var(--fw_600);
+}
+
+.line_break {
+  display: block;
+}
+
+.line_spacing {
+  letter-spacing: 0.06875rem;
+  line-height: 3.0625rem;
+}
+
+.description {
+  text-align: center;
+  color: var(--Grayish_Blue);
+  margin: 0 0 1.875rem 0;
+  padding: 0 0.9375rem;
+}
+
+.card_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0 0 0;
+}
+
+.card_middle_wrapper {
+  margin: 0 1.875rem;
+}
+
+.card {
+  width: 21.875rem;
+  height: 15.625rem;
+
+  border-radius: 5px;
+  background-color: white;
+
+  filter: drop-shadow(5px 10px 7px var(--Grayish_Blue));
+
+  /* box-shadow: 1px 3px 15px var(--Grayish_Blue); */
+}
+
+.card h2 {
+  margin: 1.875rem 1.875rem 0.625rem 1.875rem;
+  font-size: 1.25rem;
+  font-weight: var(--fw_600);
+  color: var(--Dark_Blue);
+}
+
+.card p {
+  margin: 0 1.875rem 2.5rem 1.875rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: var(--fw_200);
+  color: var(--Grayish_Blue);
+  width: 70%;
+}
+
+.card svg {
+  margin: 0 1.875rem 0.625rem 1.875rem;
+  width: 100%;
+  display: inline-block;
+  padding-left: 14.0625rem;
+}
+
+.card_1 {
+  border-top: 0.25rem solid var(--Cyan);
+}
+
+.card_2 {
+  margin-bottom: 1.875rem;
+  border-top: 0.25rem solid var(--Red);
+}
+
+.card_3 {
+  border-top: 0.25rem solid var(--Orange);
+}
+
+.card_4 {
+  border-top: 0.25rem solid var(--Blue);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+  .main_header {
+    font-size: 1.75rem;
+  }
+  .description {
+    text-align: left;
+    max-width: 23.4375rem;
+  }
+
+  .card_wrapper {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 1.875rem;
+  }
+}
