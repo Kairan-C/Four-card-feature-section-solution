@@ -24,12 +24,11 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://khyaran.github.io/Four-card-feature-section-solution/]([https://your-live-site-url.com](https://khyaran.github.io/Four-card-feature-section-solution/))
 
 ## My process
 
-It was straigh forward didn't really hit any block.
+It was straigh forward the only issue I encoutered was that Firefox didn't want to load the font it is working fine in Chrome.
 
 ### Built with
 
